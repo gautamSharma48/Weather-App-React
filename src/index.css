@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  @apply flex h-screen flex-col overflow-x-hidden overflow-y-auto bg-zinc-900;
+}
+
+::-webkit-scrollbar {
+  @apply bg-white w-[5px] scroll-smooth  transition;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-zinc-500 scroll-smooth transition;
+}
